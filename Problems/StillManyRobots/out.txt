@@ -1,0 +1,10 @@
+(1, 0)
+qty = 1
+num = 3
+total_mins = 27
+total_qty = 1
+qty = 3
+num = 2
+total_mins = 51
+total_qty = 4
+(10, 51)

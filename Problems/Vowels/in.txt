@@ -1,0 +1,1 @@
+"A text composed by letters, numbers, and ASCII characters in general is given. This text could have several white-spaces and blank-lines, but you can safely assume that it is composed by at most 50 lines and at most 10000 characters. Also you can assume that text is composed by at most 1000 words, and no word have more than 50 characters."
