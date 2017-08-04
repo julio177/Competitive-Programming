@@ -61,3 +61,22 @@ class LinkedList(object):
             previous = aux
             aux = aux.next
         previous.next = None
+
+    def reverse(self):
+        '''Method to reverse a linked list'''
+        if self.head is None:
+            return
+        elif self.head.next is None:
+            return
+
+        current = self.head
+        previous = None
+        next_node = None
+        while current.next:
+            next_node = current.next
+            current.next = previous
+            previous = current
+            current = next_node
+        self.head = current
+        self.head.next = previous
+        return
