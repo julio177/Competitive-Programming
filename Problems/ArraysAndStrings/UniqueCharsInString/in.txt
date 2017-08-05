@@ -1,4 +1,4 @@
 3
-abcdefg
-aeiou
+abcdefgABCD
+aeiouAEI
 ghkajdfdsklah

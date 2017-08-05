@@ -2,10 +2,14 @@
 
 def unique_chars(s):
     '''Function to determine if a string has all unique chars'''
-    letters = [0] * 26
+    letters = [0] * 52
     index = 0
     for i in s:
-        index = ord('a') - ord(i.lower())
+        val = ord(i)
+        if val >= 97:
+            index = val - ord('a')
+        else:
+            index = val - ord('A') + 26
         letters[index] += 1
         if letters[index] > 1:
             return False
