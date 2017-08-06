@@ -1,5 +1,8 @@
 #include <stdio.h>
-#include <string.h>
+
+/*
+Reverse a c string
+*/
 
 int main()
 {

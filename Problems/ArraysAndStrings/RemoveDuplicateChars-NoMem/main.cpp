@@ -16,6 +16,10 @@ typedef stack<string> ss;
 typedef vector<ii> vii;
 typedef vector<vi> vvi;
 
+/*
+Remove duplicate characters in string
+*/
+
 string removeDuplicates(string s) {
     if(s.size() <= 1) {
         return s;
