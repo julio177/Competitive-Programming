@@ -15,3 +15,7 @@ typedef stack<int> si;
 typedef stack<string> ss;
 typedef vector<ii> vii;
 typedef vector<vi> vvi;
+
+int main() {
+    return 0;
+}
