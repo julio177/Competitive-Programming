@@ -17,7 +17,18 @@ typedef vector<ii> vii;
 typedef vector<vi> vvi;
 
 string repalceSpaces(string str) {
-    
+    string arr[256];
+    FOR(i, 0, str.size()) {
+        arr[i] = str[i];
+    }
+    string nw = "";
+    FOR(i, 0, str.size()) {
+        if(arr[i] == " ") {
+            arr[i] = "x20";
+        }
+        nw += arr[i];
+    }
+    return nw;
 }
 
 int main() {
@@ -25,7 +36,7 @@ int main() {
     string str;
     cin >> cases;
     FOR(i, 0, cases) {
-        cin >> str;
+        getline(cin, str);
         cout << repalceSpaces(str) << endl;
     }
 }
