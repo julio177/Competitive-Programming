@@ -27,20 +27,21 @@ string removeDuplicates(string s) {
     char tmp;
     int tail = 1;
     int len = s.size();
-    int j;
-    for(int i = 1; i < len; i++) {
-        for(j = 0; j < tail; j++) {
+    
+    for(int i = 1; i < len; ++i) {
+        int j;
+        for(j = 0; j < tail; ++j) {
             if(s[i] == s[j]) {
                 break;
             }
         }
         if(j == tail) {
             s[tail] = s[i];
-            tail++;
+            ++tail;
         }
     }
     if(tail != s.size() - 1) {
-        FOR(i, tail, s.size()) {
+        for(int i = tail -1; i < s.size(); ++i) {
             s[i] = '\0';
         }
     }

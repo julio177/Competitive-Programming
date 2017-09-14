@@ -19,3 +19,4 @@ def erase(s):
 
 erase("zzzzacabzbc")
 erase('aaabbb')
+erase("rzzcacxhyarz")

@@ -1,0 +1,13 @@
+4 2
+Atlas
+Leon
+Mty
+Tigres
+Leon L 3 1
+Mty L 2 1
+Atlas L 0 1
+Tigres L 1 2
+Atlas V 2 1
+Mty L 2 0
+Tigres L 1 0
+Leon V 2 1
