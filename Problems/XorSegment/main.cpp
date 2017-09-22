@@ -64,13 +64,16 @@ void propagate(int n, int d) {
 	if (lazy[n]) {
         segmentTree[n] = segmentTree[n] ^ lazy[n];
 		if (n < ss) {
-			cout << "------" << endl;
+			cout << "------ before" << endl;
 			cout << lazy[n << 1] << endl;
 			cout << lazy[n << 1 | 1] << endl;
 			cout << "------" << endl;
             lazy[n << 1] += lazy[n];
 			lazy[n << 1 | 1] += lazy[n];
-
+			cout << "------ after" << endl;
+			cout << lazy[n << 1] << endl;
+			cout << lazy[n << 1 | 1] << endl;
+			cout << "------" << endl;
 		}
 		lazy[n] = 0;
 	}
