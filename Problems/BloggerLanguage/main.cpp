@@ -29,7 +29,7 @@ int main() {
         complete_low = "";
         samp_low = "";
         FOR(i, 0, sample.size()) {
-            samp_low += tolower(sample[i]);
+            samp_low c+= tolower(sample[i]);
         }
         FOR(i, 0, complete.size()) {
             complete_low += tolower(complete[i]);
