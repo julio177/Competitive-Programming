@@ -1,3 +1,4 @@
+# http://codeforces.com/problemset/problem/749/A
 def main():
     num = int(input())
     first = int(num / 2) - 1
