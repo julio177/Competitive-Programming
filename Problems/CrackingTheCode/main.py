@@ -4,6 +4,7 @@ def main():
     new_num = num[0] + num[2] + num[4] + num[3] + num[1]
     num = int(new_num)
     num = num ** 5
-    print(num % 100000)
+    res = str(num)
+    print(res[-5:])
 
 main()
