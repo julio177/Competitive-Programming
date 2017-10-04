@@ -1,44 +1,41 @@
 import math
-
-class Element(object):
-    def __init__(self, val, index):
-        self.val = val
-        self.index = index
-        self.used = 0
+from heapq import heappush, heappop, heapify, _heapify_max
 
 def main():
     n, k = map(int, input().split())
     nums = list(map(int, input().split()))
-    els = [Element(0, 0) for i in range(len(nums))]
+    heap = []
     maxsum = 0
     for i in range(len(nums)):
-        els[i].val = nums[i]
-        els[i].index = i
+        heappush(heap, (nums[i], i, 0))
         maxsum += nums[i]
-    els = sorted(els, key=lambda x: x.val)
-    maxd = len(els) - 1
+    maxd = len(heap) - 1
+    _heapify_max(heap)
+    print(heap)
     for i in range(0, k):
-        prev = els[maxd].val
+        # if len(el) > 1:
+        #     aux = el[maxd] / el[maxd - 1]
+        #     cant = int(math.ceil(math.log2(aux)))
+        #     if cant > k:
+        #         cant = k
         # print('prev')
         # print(prev)
-        els[maxd].val = els[maxd].val - math.ceil(els[maxd].val / 2)
+        el[maxd].val = el[maxd].val - math.ceil(el[maxd].val / 2)
         # print('new')
-        # print(els[maxd].val)
+        # print(el[maxd].val)
         # print('dif')
-        dif = prev - els[maxd].val
+        dif = prev - el[maxd].val
         # print(dif)
         # print('maxsum')
         # print(maxsum)
         maxsum -= dif
         # print('after')
         # print(maxsum)
-        els[maxd].used += 1
-        if len(els) > 1 and maxd != 0:
-            if els[maxd].val < els[maxd - 1].val:
+        el[maxd].used += 1
+        if len(el) > 1 and maxd != 0:
+            if el[maxd].val < el[maxd - 1].val:
                 maxd = maxd - 1
-    els = sorted(els, key=lambda x: x.index)
 
     print(maxsum)
-    for i in els:
-        print(i.used, end=" ")
+    
 main()

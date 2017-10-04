@@ -14,10 +14,20 @@ typedef vector<int> vi;
 typedef vector<ii> vii;
 typedef vector<vi> vvi;
 
+vs results(10000000, "");
+
+void combinations(a, b) {
+	vs.pb(a + a);
+	vs.pb()
+}
+
 int main(int argc, char const *argv[])
 {
-	int N;
-	cin >> N;
-	cout << (2LL << N) - 2 << endl;
+	string a, b;
+	a = "4";
+	b = "7";
+	vs.pb(a);
+	vs.pb(b);
+	combinations(a, b);
 	return 0;
 }
