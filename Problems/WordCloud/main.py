@@ -18,7 +18,7 @@ def word_cloud(s):
         curr_words = line.split()
         for i in range(len(curr_words)):
             curr_words[i] = format(curr_words[i])
-            
+
             # case 0
             if curr_words[i] in words:
                 words[curr_words[i]] += 1
